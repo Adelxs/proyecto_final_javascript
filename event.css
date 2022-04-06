@@ -1,0 +1,278 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-image: url(./img_planetas/galaxia2.jpg);
+    background-size: 100%;
+    background-repeat: repeat;
+    background-color: rgb(34, 33, 33);
+}
+
+.inicio {
+    background-image: url(./img_planetas/galaxia2.jpg);
+    
+   
+    background-color: rgb(34, 33, 33);
+    
+}
+
+.planetas {
+    background-image: url(./img_planetas/galaxia2.jpg);
+    background-repeat: repeat;
+    background-color: rgb(31, 31, 31);
+}
+
+.tienda {
+    background-image: url(./img_planetas/galaxia2.jpg);
+    background-repeat: repeat;
+    background-color: rgb(31, 31, 31);
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    opacity: 80%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+footer {
+    width: 100%;
+    height: 70px;
+    opacity: 80%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.encabezado {
+    margin: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.imagen {
+    width: 500px;
+    height: 500px;
+}
+
+.tienda {
+    background-color: black;
+    border: 1px solid white;
+    width: 100px;
+    height: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.tienda a {
+    color: white;
+    text-decoration: none;
+}
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.buttonInicio {
+    background-color: black;
+    border: 1px solid white;
+    width: 100px;
+    height: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.buttonInicio:hover {
+    cursor: pointer;
+}
+
+.buttonInicio a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+.buttonFormulario {
+    background-color: black;
+    border: 1px solid white;
+    width: 100px;
+    height: 30px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.buttonFormulario a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttonFormulario:hover {
+    cursor: pointer;
+}
+
+.multimedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fecha {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;
+}
+
+.titulo {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;
+}
+.explicacion {
+    margin: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*.respuesta {
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    height: 400px;
+    width: 350px;
+    color: white;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}*/
+
+.imagen {
+    width: 300px;
+    height: 300px;
+}
+
+/*.planeta {
+    height: 300px;
+    width: 350px;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}*/
+
+.planetas h1 {
+    
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.planetas-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    width: 300px;
+    height: 600px;
+    
+}
+
+
+
+.container-saturno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    width: 400px;
+    height: 600px;
+    
+}
+
+
+
+.container img {
+    width: 300px;
+    height: 300px;
+}
+
+.container-saturno img {
+    width: 500px;
+    height: 300px;
+}
+
+
+.buttonC {
+    background-color: black;
+    border: 1px solid white;
+    width: 100px;
+    height: 40px;
+    margin: 40px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.titleP {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.P {
+    position: relative;
+    overflow: hidden;
+    max-height: 0;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: max-height 0.4s ease-out;
+}
+
+.abrir_cerrar {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+
+
+
+.tienda h1 {
+    
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+}

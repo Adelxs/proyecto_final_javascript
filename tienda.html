@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="estiloTienda.css">
+    
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <title>Carrito Compras en JavaScript y LocalStorage</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav">
+        <button class="buttonInicio"><a href="event.html">Home</a></button>
+        <button class="tienda"><a href="tienda.html">Tienda</a></button>
+        <button class="buttonFormulario" id="buttonFormulario"><a href="registro.html">Registrate</a></button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+            <h1 class="display-4 mt-4">Lista de Productos</h1>
+            <p class="lead">Selecciona uno de nuestros productos y accede a un descuento</p>
+        </div>
+
+        <div class="container" id="lista-productos">
+            
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm bg-dark">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Celestron Astromaster 130eq</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="./img_planetas/telescopio1.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">150.000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Diseño óptico: Reflector</li>
+                            <li>Largo focal: 650 mm (25,6’’)</li>
+                            <li>Diámetro apertura: 130 mm (5,1’’)</li>
+                        </ul>
+                        <button class="btn">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm bg-dark">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Celestron Astromaster 114eq </h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="./img_planetas/telescopio2.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">120.000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Diseño óptico: Reflector</li>
+                            <li>Largo focal: 1000 mm (39’’)</li>
+                            <li>Diámetro apertura: 114 mm (4.48’’)</li>
+                        </ul>
+                        <button class="btn">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm bg-dark">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Telescopio Orion SkyQuest XT10</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="./img_planetas/telescopio3.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">500.000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Diseño óptico: Reflector</li>
+                            <li>Largo focal: 1200 (47’’)</li>
+                            <li>Diámetro apertura: 254mm (10’’)</li>
+                        </ul>
+                        <button class="btn">Comprar</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm bg-dark">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Telescopio Celestron PowerSeeker 80EQ</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="./img_planetas/telescopio4.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">100.000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Diseño óptico: Refractor</li>
+                            <li>Largo focal: 900 mm (35.43’’)</li>
+                            <li>Diámetro apertura: 80 mm (3.15’’)</li>
+                        </ul>
+                        <button class="btn">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm bg-dark">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Telescopio Celestron Powerseeker 114EQ</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="./img_planetas/telescopio5.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">110.000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Diseño óptico: Reflector</li>
+                            <li>Largo focal: 900 mm (35″)</li>
+                            <li>Diámetro apertura: 114 mm (4.49″)</li>
+                        </ul>
+                        <button class="btn">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm bg-dark">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Telescopio Orion ShortTube 80</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="./img_planetas/telescopio6.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">90.000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Diseño óptico: Refractor</li>
+                            <li>Largo focal: 400mm</li>
+                            <li>Diámetro apertura: 80mm F/5.0</li>
+                        </ul>
+                        <button class="btn">Comprar</button>
+                    </div>
+                </div>
+
+            </div>
+
+              
+
+            </div>
+        
+
+        </div>
+    </main>
+    
+    <div class="carrito"></div>
+    
+    <script src="compra.js"></script>
+    
+    
+ 
+    <footer>Todos los derechos reservados</footer>
+</body>
+
+</html>
